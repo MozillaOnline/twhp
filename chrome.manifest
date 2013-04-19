@@ -1,0 +1,34 @@
+content	  twhomepage         chrome/content/            contentaccessible=yes
+locale    twhomepage  en-US  chrome/locale/en-US/
+locale    twhomepage  zh-TW  chrome/locale/zh-TW/
+overlay	  chrome://browser/content/browser.xul  chrome://twhomepage/content/overlay.xul
+
+
+content   twerrorpage        chrome_errorpage/content/  contentaccessible=yes
+overlay   chrome://browser/content/browser.xul  chrome://twerrorpage/content/browserOverlay.xul
+
+
+content   ntab               chrome_ntab/content/
+locale    ntab  en-US        chrome_ntab/locale/en-US/
+locale    ntab  zh-TW        chrome_ntab/locale/zh-TW/
+skin      ntab  classic/1.0  chrome_ntab/skin/
+resource  ntab               chrome_ntab/modules/
+overlay   chrome://browser/content/browser.xul  chrome://ntab/content/ff-overlay.xul
+
+
+component {89c12df6-b28e-4c93-82b8-4251059c670e} components/aboutNTab.js
+contract @mozilla.org/network/protocol/about;1?what=ntab {89c12df6-b28e-4c93-82b8-4251059c670e}
+
+
+component {5ae6894d-7f12-414a-b9a4-6b467d5b5a10} components/aboutTWHome.js
+contract @mozilla.org/network/protocol/about;1?what=twhome {5ae6894d-7f12-414a-b9a4-6b467d5b5a10}
+
+
+component {fdc3c9cd-c6eb-40c5-bb31-98c9f97e9da3} components/twhpThumbsProtocol.js
+contract @mozilla.org/network/protocol;1?name=twhp-page-thumb {fdc3c9cd-c6eb-40c5-bb31-98c9f97e9da3}
+
+
+component {375a716d-8d89-47c8-a242-03d0d74979fa} components/twhpFrameUpdater.js
+contract @mozillaonline.com/twhp-frame-updater;1 {375a716d-8d89-47c8-a242-03d0d74979fa}
+category update-timer TWhpFrameUpdater @mozillaonline.com/twhp-frame-updater;1,getService,twhp-frame-update-timer,moa.ntab.update.interval,43200
+

@@ -1,0 +1,55 @@
+<!ENTITY ntab.title "新分頁">
+
+<!ENTITY ntab.context.export "匯出">
+<!ENTITY ntab.context.import "匯入">
+
+<!ENTITY ntab.context.edit "編輯">
+<!ENTITY ntab.context.refresh "重新整理">
+<!ENTITY ntab.context.refreshall "全部重新整理">
+
+<!ENTITY ntab.label.setdefault "設為預設瀏覽器">
+<!ENTITY ntab.tooltip.switchtonav "切換至推薦網頁">
+<!ENTITY ntab.tooltip.switchtoquickdial "切換至最常造訪網頁">
+<!ENTITY ntab.tooltip.switchtosearch "切換至搜尋頁">
+<!ENTITY ntab.tooltip.switchtoblank "切換至空白頁">
+
+<!ENTITY ntab.firefoxchina "MyFirefox首頁">
+
+<!ENTITY ntab.launcher.relatedtabs "瀏覽記錄">
+<!ENTITY ntab.launcher.relatedtabs.all "全選">
+<!ENTITY ntab.launcher.relatedtabs.open "開啟">
+
+<!ENTITY ntab.launcher.tools "工具列">
+<!ENTITY ntab.launcher.tools.downloads "下載">
+<!ENTITY ntab.launcher.tools.bookmarks "書籤">
+<!ENTITY ntab.launcher.tools.history "歷史記錄">
+<!ENTITY ntab.launcher.tools.add-ons "附加元件">
+<!ENTITY ntab.launcher.tools.sync "同步">
+<!ENTITY ntab.launcher.tools.settings "設定">
+
+<!ENTITY ntab.launcher.pagesettings "頁面設定">
+
+<!ENTITY ntab.launcher.pagesettings.background "背景設定">
+<!ENTITY ntab.launcher.pagesettings.background.noise "顯示底紋">
+<!ENTITY ntab.launcher.pagesettings.background.reset "背景重設">
+<!ENTITY ntab.launcher.pagesettings.quickdial "行列選擇">
+<!ENTITY ntab.launcher.pagesettings.quickdial.row "列數">
+<!ENTITY ntab.launcher.pagesettings.quickdial.col "行數">
+<!ENTITY ntab.launcher.pagesettings.misc "其他設定">
+<!ENTITY ntab.launcher.pagesettings.misc.openinnewtab "開啟新分頁">
+<!ENTITY ntab.launcher.pagesettings.misc.hidesearch "隱藏搜尋欄">
+<!ENTITY ntab.launcher.pagesettings.misc.showcontextmenu "滑鼠右鍵選單開啟“新增最常造訪網頁”功能">
+<!ENTITY ntab.launcher.pagesettings.misc.restore "還原為原始設定">
+<!ENTITY ntab.launcher.pagesettings.misc.feedback "提供意見">
+
+<!ENTITY ntab.quickdial.grid "熱門網站">
+<!ENTITY ntab.quickdial.site "推薦網站">
+
+<!ENTITY ntab.editor.title "標題">
+<!ENTITY ntab.editor.url "網址">
+<!ENTITY ntab.editor.add "新增">
+<!ENTITY ntab.editor.related "瀏覽記錄">
+<!ENTITY ntab.editor.bookmark "書籤">
+<!ENTITY ntab.editor.promoted "熱門網站">
+<!ENTITY ntab.editor.frequent "最常瀏覽的網頁">
+<!ENTITY ntab.editor.session "上次瀏覽的網頁">

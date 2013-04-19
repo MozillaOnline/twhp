@@ -1,0 +1,16 @@
+<!ENTITY ntabContext.label "新增至最常造訪網頁">
+<!ENTITY ntabContext.accesskey "Y">
+
+<!ENTITY ntab.contextmenu.refresh "重新整理">
+<!ENTITY ntab.contextmenu.refresh.accesskey "R">
+<!ENTITY ntab.contextmenu.refreshall "全部重新整理">
+<!ENTITY ntab.contextmenu.refreshall.accesskey "A">
+<!ENTITY ntab.contextmenu.edit "編輯">
+<!ENTITY ntab.contextmenu.edit.accesskey "E">
+
+<!ENTITY ntab.contextmenu.export.accesskey "X">
+<!ENTITY ntab.contextmenu.export "匯出">
+<!ENTITY ntab.contextmenu.import.accesskey "I">
+<!ENTITY ntab.contextmenu.import "匯入">
+
+<!ENTITY twhptitle "Firefox首頁">

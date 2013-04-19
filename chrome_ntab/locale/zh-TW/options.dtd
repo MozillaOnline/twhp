@@ -1,0 +1,13 @@
+<!ENTITY ntab.config.windowtitle "Firefox台灣版首頁偏好設定">
+<!ENTITY ntab.config.pane1.title "顯示">
+<!ENTITY ntab.config.rownumber "最常造訪網頁欄列數">
+<!ENTITY ntab.config.columnnumber "最常造訪網頁欄行數">
+<!ENTITY ntab.config.displayntab "開啟新分頁功能">
+<!ENTITY ntab.config.hidesearch "隱藏搜尋欄">
+<!ENTITY ntab.config.addurl "滑鼠右鍵選單開啟“新增最常造訪網頁”功能">
+<!ENTITY ntab.config.loadInExistingTabs "啟動 Firefox 時，開啟空白新分頁">
+<!ENTITY ntab.config.usehotkey "使用快捷鍵開啟最常造訪網頁（Ctrl+1~9）">
+<!ENTITY ntab.config.yes "是">
+<!ENTITY ntab.config.no "否">
+<!ENTITY ntab.config.tip1 "⑴滑鼠右鍵選單開啟“新增最常造訪網頁”功能">
+<!ENTITY ntab.config.tip2 "⑵使用Ctrl+0~9開啟“最常造訪網頁”">

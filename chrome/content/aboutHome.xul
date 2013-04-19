@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE window SYSTEM "chrome://ntab/locale/overlay.dtd">
+<window id="twhp_window"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        title="&twhptitle;">
+  <html:link rel="icon" href="chrome://ntab/skin/logo/firefox.ico" style="display:none"/>
+  <browser id="content" type="content" src="" flex="1"/>
+  <script type="text/javascript">
+    const { interfaces: Ci, utils: Cu } = Components;
+    Cu.import('resource://gre/modules/Services.jsm');
+
+    window.addEventListener("load", function() {
+      var src = "";
+      try {
+        src = Services.prefs.getComplexValue("extensions.twhomepage.abouturl",
+                Ci.nsIPrefLocalizedString).data.trim();
+      } catch (e) {}
+      src = src || "http://myfirefox.com.tw/?utm_source=twhome&amp;utm_medium=browser&amp;utm_campaign=adu";
+      document.getElementById("content").setAttribute("src", src);
+    }, false);
+  </script>
+</window>

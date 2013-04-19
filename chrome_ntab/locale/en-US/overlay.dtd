@@ -1,0 +1,16 @@
+<!ENTITY ntabContext.label "Add to quick dial">
+<!ENTITY ntabContext.accesskey "Y">
+
+<!ENTITY ntab.contextmenu.refresh "Refresh">
+<!ENTITY ntab.contextmenu.refresh.accesskey "R">
+<!ENTITY ntab.contextmenu.refreshall "Refresh All">
+<!ENTITY ntab.contextmenu.refreshall.accesskey "A">
+<!ENTITY ntab.contextmenu.edit "Edit">
+<!ENTITY ntab.contextmenu.edit.accesskey "E">
+
+<!ENTITY ntab.contextmenu.export.accesskey "X">
+<!ENTITY ntab.contextmenu.export "Export">
+<!ENTITY ntab.contextmenu.import.accesskey "I">
+<!ENTITY ntab.contextmenu.import "Import">
+
+<!ENTITY twhptitle "Firefox Homepage">
