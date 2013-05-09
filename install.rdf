@@ -9,7 +9,7 @@
 
   <r:Description about="urn:mozilla:install-manifest">
     <id>twhomepage@mozillaonline.com</id>
-    <version>0.2.0</version>
+    <version>0.2.1</version>
     <name>Firefox Homepage</name>
     <description>Customizied Home Page for Firefox</description>
     <creator>Mozilla Online</creator>
