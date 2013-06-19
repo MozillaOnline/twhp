@@ -45,6 +45,9 @@ var tracker = (function() {
 
   return {
     track: function(option) {
+      // getDataChoices
+      if(! Application.prefs.getValue("extensions.tpmanager.tracking.enabled",false))
+        return;
       option = extend(option, {
         type: '',
         action: '',
