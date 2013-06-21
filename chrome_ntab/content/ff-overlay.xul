@@ -12,13 +12,6 @@
   <script type="application/x-javascript" src="snapshot.js"/>
   <script type="application/x-javascript" src="sendlink.js"/>
 
-  <script type="text/javascript">
-    (function() {
-      // import session module, so that session can be stored when application quits.
-      var jsm = {};
-      Cu.import('resource://ntab/session.jsm', jsm);
-    })();
-  </script>
   <stringbundleset id="stringbundleset">
     <stringbundle id="ntab-strings" src="chrome://ntab/locale/overlay.properties"/>
   </stringbundleset>
