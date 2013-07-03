@@ -81,6 +81,9 @@
   ns.browserOpenTab = function(event) {
     if (newTabPref.inUse) {
       openUILinkIn(_url, 'tab');
+
+      // for Fx 12 and older versions
+      focusAndSelectUrlBar();
     } else {
       window.originalBrowserOpenTab(event);
     }
