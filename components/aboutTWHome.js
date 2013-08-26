@@ -15,12 +15,14 @@ AboutTWhome.prototype = {
   QueryInterface: XPCOMUtils.generateQI([Ci.nsIAboutModule]),
 
   getURIFlags: function(aURI) {
-    return Ci.nsIAboutModule.ALLOW_SCRIPT;
+    return (Ci.nsIAboutModule.ALLOW_SCRIPT |
+            Ci.nsIAboutModule.HIDE_FROM_ABOUTABOUT);
   },
 
   newChannel: function(aURI) {
-    var home = 'chrome://twhomepage/content/aboutHome.xul';
+    var home = 'http://myfirefox.com.tw/?utm_source=twhome&utm_medium=browser&utm_campaign=adu';
     var channel = Services.io.newChannel(home, null, null);
+    channel.loadFlags = channel.loadFlags | channel.LOAD_REPLACE;
     channel.originalURI = aURI;
     return channel;
   }
