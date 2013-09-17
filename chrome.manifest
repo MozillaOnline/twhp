@@ -1,7 +1,6 @@
 content	  twhomepage         chrome/content/            contentaccessible=yes
 locale    twhomepage  en-US  chrome/locale/en-US/
 locale    twhomepage  zh-TW  chrome/locale/zh-TW/
-overlay	  chrome://browser/content/browser.xul  chrome://twhomepage/content/overlay.xul
 
 
 content   twerrorpage        chrome_errorpage/content/  contentaccessible=yes
