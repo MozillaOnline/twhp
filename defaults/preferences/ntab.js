@@ -12,12 +12,12 @@ pref("moa.ntab.displayfooter", true);
 
 pref("moa.ntab.view.firefoxchina.url", "http://myfirefox.com.tw/?from=ntab_bottom");
 
-pref("moa.ntab.view.quickdial.url", "http://myfirefox.com.tw/newtab/hot/");
-pref("moa.ntab.view.search.url", "http://myfirefox.com.tw/newtab/search/");
+pref("moa.ntab.view.quickdial.url", "http://browser.myfirefox.com.tw/newtab/hot/");
+pref("moa.ntab.view.search.url", "http://browser.myfirefox.com.tw/newtab/search/");
 
-pref("moa.ntab.view.site.url", "http://myfirefox.com.tw/newtab/selected/");
-pref("moa.ntab.view.preedit.url", "http://myfirefox.com.tw/newtab/add/");
-pref("moa.ntab.view.errorpage.url", "http://myfirefox.com.tw/newtab/error/");
+pref("moa.ntab.view.site.url", "http://browser.myfirefox.com.tw/newtab/selected/");
+pref("moa.ntab.view.preedit.url", "http://browser.myfirefox.com.tw/newtab/add/");
+pref("moa.ntab.view.errorpage.url", "http://browser.myfirefox.com.tw/newtab/error/");
 
 pref("moa.ntab.openLinkInNewTab", false);
 pref("moa.ntab.loadInExistingTabs", false);
