@@ -135,12 +135,12 @@ section > iframe {
   display: block;
   height: 0;
   margin: auto;
-  padding: 50px 0 20px;
+  padding: 40px 0 0;
   overflow: hidden;
   width: 605px;
 }
 #quickdial > iframe[src] {
-  height: 60px;
+  height: 118px;
 }
 
 /* quickdial tab switcher */
@@ -153,7 +153,7 @@ section > iframe {
 #quickdial > iframe[src] ~ #prevtab,
 #quickdial > iframe[src] ~ #quick_dial_tabpanels,
 #quickdial > iframe[src] ~ #nexttab {
-  height: -moz-calc(100% - 130px);
+  height: -moz-calc(100% - 158px);
 }
 #prevtab,
 #nexttab {
@@ -166,7 +166,7 @@ section > iframe {
 #quickdial > iframe[src] ~ #prevtab,
 #quickdial > iframe[src] ~ #nexttab {
   height: 100%;
-  margin-top: -130px;
+  margin-top: -158px;
 }
 #prevtab > .top-flex,
 #nexttab > .top-flex {
