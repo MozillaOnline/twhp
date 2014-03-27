@@ -3,163 +3,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
-<base href="http://myfirefox.com.tw/" />
-<!--link href="/assets/less/newtab.css" rel="stylesheet" type="text/css" /-->
-<style type="text/css">
-@charset "utf-8";
-* {
-  font-family: arial, helvetica, '微軟正黑體', clean, sans-serif;
-}
-body {
-  font: 14px Arial;
-  margin: 0;
-  padding: 0;
-}
-ul,
-li {
-  list-style: none outside none;
-  margin: 0;
-  padding: 0;
-}
-ul {
-  clear: both;
-  display: block;
-}
-a {
-  color: #3C3C3C;
-  text-decoration: none;
-}
-a:hover {
-  color: #f37d25;
-}
-a:hover {
-  color: #f37d25;
-}
-.main {
-  height: 280px;
-  width: 695px;
-}
-#node182 {
-  border-bottom: 1px dotted #DDDDDD;
-  height: 260px;
-  margin-bottom: 5px;
-  padding-bottom: 5px;
-  padding-top: 2px;
-}
-#node182 li,
-#node183 li {
-  clear: none;
-  float: left;
-  height: 28px;
-  line-height: 28px;
-  margin: 2px;
-  overflow: hidden;
-  text-align: center;
-  width: 111px;
-}
-.long_name {
-  font-size: 12px;
-}
-/*tab*/
-.tab,
-.iconlink ul li:hover {
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-image: url(data:image/png;base64,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);
-}
-.tab_main.main {
-  height: 340px;
-  padding: 10px;
-  width: 700px;
-}
-.left {
-  clear: left;
-  float: left;
-  width: 80px;
-}
-.right {
-  clear: right;
-  float: right;
-  overflow: hidden;
-  width: 580px;
-}
-.tab {
-  background-position: 0 0;
-  height: 280px;
-  overflow: hidden;
-  padding: 36px 0;
-  width: 80px;
-}
-.tab li {
-  height: 70px;
-  line-height: 70px;
-  padding-left: 5px;
-  text-align: center;
-  width: 70px;
-}
-.tab li .current {
-  font-weight: bold;
-  color: #f37d25;
-}
-.area {
-  display: none;
-  width: 642px;
-}
-.iconlink ul li {
-  clear: none;
-  float: left;
-  height: 100px;
-  line-height: 30px;
-  margin: 5px 25px 10px 0;
-  overflow: hidden;
-  text-align: center;
-  width: 75px;
-}
-.iconlink ul li img {
-  height: 57px;
-  width: 57px;
-}
-.iconlink ul li:hover {
-  background-position: -322px -1px;
-}
-.iconlink ul li a {
-  clear: both;
-  display: block;
-  font-size: 12px;
-  line-height: 15px;
-  padding: 0 0 8px 0;
-}
-.iconlink ul li:hover a {
-  color: #f37d25;
-}
-.txtlink {
-  border-top: 1px dashed #CCCCCC;
-  float: left;
-  padding-top: 10px;
-}
-.txtlink ul li {
-  clear: none;
-  float: left;
-  height: 35px;
-  line-height: 35px;
-  margin: 0 10px 10px 0;
-  padding: 0;
-  text-align: center;
-  width: 90px;
-}
-.txtlink ul li a {
-  clear: both;
-  display: block;
-  font-size: 12px;
-  line-height: 18px;
-}
-:active {
-  outline: 0 none;
-}
-:focus {
-  outline: 0 none;
-}
-</style>
+<base href="http://browser.myfirefox.com.tw/" />
+<link href="/assets/less/newtab.css" rel="stylesheet" type="text/css" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-38773351-1', 'browser.myfirefox.com.tw');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
@@ -177,74 +32,74 @@ a:hover {
       <div class="iconlink">
         <ul id="node6">
           <li>
-          	<a href="https://www.facebook.com" title="Facebook"><img src="/assets/images/icon_fb.png"></a>
-          	<a href="https://www.facebook.com" title="Facebook">Facebook</a>
+          	<a href="https://www.facebook.com" title="Facebook" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0000'); ga('send', 'event', 'SiteName', 'Cat01', 'Facebook_https://www.facebook.com');"><img src="/assets/images/icon_fb.png"></a>
+          	<a href="https://www.facebook.com" title="Facebook" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0000'); ga('send', 'event', 'SiteName', 'Cat01', 'Facebook_https://www.facebook.com');">Facebook</a>
           </li>
           <li>
-          	<a href="http://www.youtube.com/" title="Youtube"><img src="/assets/images/icon_youtube.png"></a>
-          	<a href="http://www.youtube.com/" title="Youtube">Youtube</a>
+          	<a href="http://www.youtube.com/" title="Youtube" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0100'); ga('send', 'event', 'SiteName', 'Cat01', 'Youtube_http://www.youtube.com/');"><img src="/assets/images/icon_youtube.png"></a>
+          	<a href="http://www.youtube.com/" title="Youtube" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0100'); ga('send', 'event', 'SiteName', 'Cat01', 'Youtube_http://www.youtube.com/');">Youtube</a>
           </li>
           <li>
-          	<a href="http://tw.yahoo.com/" title="Yahoo!奇摩"><img src="/assets/images/icon_yahoo.png"></a>
-          	<a href="http://tw.yahoo.com/" title="Yahoo!奇摩">Yahoo!奇摩</a> </li>
+          	<a href="http://tw.yahoo.com/" title="Yahoo!奇摩" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0200'); ga('send', 'event', 'SiteName', 'Cat01', 'Yahoo!奇摩_http://tw.yahoo.com/');"><img src="/assets/images/icon_yahoo.png"></a>
+          	<a href="http://tw.yahoo.com/" title="Yahoo!奇摩" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0200'); ga('send', 'event', 'SiteName', 'Cat01', 'Yahoo!奇摩_http://tw.yahoo.com/');">Yahoo!奇摩</a> </li>
           <li>
-          <a href="http://www.wretch.cc/" title="無名小站"><img src="/assets/images/icon_wretch.png"></a>
-          <a href="http://www.wretch.cc/" title="無名小站">無名小站</a>
+          <a href="http://www.pixnet.net" title="痞客邦" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0300'); ga('send', 'event', 'SiteName', 'Cat01', '痞客邦_http://www.pixnet.net');"><img src="/assets/images/icon_pixnet.png"></a>
+          <a href="http://www.pixnet.net" title="痞客邦" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0300'); ga('send', 'event', 'SiteName', 'Cat01', '痞客邦_http://www.pixnet.net');">痞客邦</a>
           </li>
           <li>
-          <a href="http://www.gamer.com.tw/" title="巴哈姆特"><img src="/assets/images/icon_gamer.png"></a>
-          <a href="http://www.gamer.com.tw/" title="巴哈姆特">巴哈姆特</a>
+          <a href="http://www.gamer.com.tw/" title="巴哈姆特" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0400'); ga('send', 'event', 'SiteName', 'Cat01', '巴哈姆特_http://www.gamer.com.tw/');"><img src="/assets/images/icon_gamer.png"></a>
+          <a href="http://www.gamer.com.tw/" title="巴哈姆特" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0400'); ga('send', 'event', 'SiteName', 'Cat01', '巴哈姆特_http://www.gamer.com.tw/');">巴哈姆特</a>
           </li>
           <li>
-          <a href="http://www03.eyny.com/" title="伊莉討論區"><img src="/assets/images/icon_eyny.png"></a>
-          <a href="http://www03.eyny.com/" title="伊莉討論區">伊莉討論區</a>
+          <a href="http://www03.eyny.com/" title="伊莉討論區" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0500'); ga('send', 'event', 'SiteName', 'Cat01', '伊莉討論區_http://www03.eyny.com/');"><img src="/assets/images/icon_eyny.png"></a>
+          <a href="http://www03.eyny.com/" title="伊莉討論區" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0500'); ga('send', 'event', 'SiteName', 'Cat01', '伊莉討論區_http://www03.eyny.com/');">伊莉討論區</a>
           </li>
           <li>
-          <a href="https://www.google.com.tw/" title="Google台灣"><img src="/assets/images/icon_google.png"></a>
-          <a href="https://www.google.com.tw/" title="Google台灣">Google台灣</a>
+          <a href="https://www.google.com.tw/" title="Google台灣" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0001'); ga('send', 'event', 'SiteName', 'Cat01', 'Google台灣_https://www.google.com.tw/');"><img src="/assets/images/icon_google.png"></a>
+          <a href="https://www.google.com.tw/" title="Google台灣" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0001'); ga('send', 'event', 'SiteName', 'Cat01', 'Google台灣_https://www.google.com.tw/');">Google台灣</a>
           </li>
           <li>
-          <a href="http://tw.nextmedia.com" title="壹蘋果網絡"><img src="/assets/images/icon_nextmedia.png"></a>
-          <a href="http://tw.nextmedia.com" title="壹蘋果網絡">壹蘋果網絡</a>
+          <a href="http://tw.nextmedia.com" title="壹蘋果網絡" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0101'); ga('send', 'event', 'SiteName', 'Cat01', '壹蘋果網絡_http://tw.nextmedia.com');"><img src="/assets/images/icon_nextmedia.png"></a>
+          <a href="http://tw.nextmedia.com" title="壹蘋果網絡" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0101'); ga('send', 'event', 'SiteName', 'Cat01', '壹蘋果網絡_http://tw.nextmedia.com');">壹蘋果網絡</a>
           </li>
           <li>
-          <a href="http://zh.wikipedia.org/wiki/Wikipedia:首页" title="維基百科"><img src="/assets/images/icon_wiki.png"></a>
-          <a href="http://zh.wikipedia.org/wiki/Wikipedia:首页" title="維基百科">維基百科</a>
+          <a href="http://zh.wikipedia.org/wiki/Wikipedia:首页" title="維基百科" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0201'); ga('send', 'event', 'SiteName', 'Cat01', '維基百科_http://zh.wikipedia.org/wiki/Wikipedia:首页');"><img src="/assets/images/icon_wiki.png"></a>
+          <a href="http://zh.wikipedia.org/wiki/Wikipedia:首页" title="維基百科" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0201'); ga('send', 'event', 'SiteName', 'Cat01', '維基百科_http://zh.wikipedia.org/wiki/Wikipedia:首页');">維基百科</a>
           </li>
           <li>
-          <a href="http://www.gamebase.com.tw/" title="遊戲基地"><img src="/assets/images/icon_gamebase.png"></a>
-          <a href="http://www.gamebase.com.tw/" title="遊戲基地">遊戲基地</a>
+          <a href="http://www.gamebase.com.tw/" title="遊戲基地" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0301'); ga('send', 'event', 'SiteName', 'Cat01', '遊戲基地_http://www.gamebase.com.tw/');"><img src="/assets/images/icon_gamebase.png"></a>
+          <a href="http://www.gamebase.com.tw/" title="遊戲基地" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0301'); ga('send', 'event', 'SiteName', 'Cat01', '遊戲基地_http://www.gamebase.com.tw/');">遊戲基地</a>
           </li>
           <li>
-          <a href="http://www.libertytimes.com.tw" title="自由時報"><img src="/assets/images/icon_libertytimes.png"></a>
-          <a href="http://www.libertytimes.com.tw" title="自由時報">自由時報</a>
+          <a href="http://www.libertytimes.com.tw" title="自由時報" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0401'); ga('send', 'event', 'SiteName', 'Cat01', '自由時報_http://www.libertytimes.com.tw');"><img src="/assets/images/icon_libertytimes.png"></a>
+          <a href="http://www.libertytimes.com.tw" title="自由時報" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0401'); ga('send', 'event', 'SiteName', 'Cat01', '自由時報_http://www.libertytimes.com.tw');">自由時報</a>
           </li>
           <li>
-          <a href="http://www.104.com.tw" title="104人力銀行"><img src="/assets/images/icon_104.png"></a>
-          <a href="http://www.104.com.tw" title="104人力銀行">104人力銀行</a>
+          <a href="http://www.104.com.tw" title="104人力銀行" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0501'); ga('send', 'event', 'SiteName', 'Cat01', '104人力銀行_http://www.104.com.tw');"><img src="/assets/images/icon_104.png"></a>
+          <a href="http://www.104.com.tw" title="104人力銀行" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0501'); ga('send', 'event', 'SiteName', 'Cat01', '104人力銀行_http://www.104.com.tw');">104人力銀行</a>
           </li>
         </ul>
       </div>
       <div class="txtlink">
         <ul id="node7">
-          <li><a href="http://1111.com.tw" title="1111人力銀行">1111人力銀行</a></li>
-          <li><a href="http://udn.com/NEWS/mainpage.shtml" title="聯合新聞網">聯合新聞網</a></li>
-          <li><a href="http://www.emome.net/" title="emome">emome</a></li>
-          <li><a href="http://www.plurk.com/" title="噗浪">噗浪</a></li>
-          <li><a href="http://www.taiwanlottery.com.tw" title="台灣彩券">台灣彩券</a></li>
-          <li><a href="http://www.apple.com/tw/" title="Apple">Apple</a></li>
-          <li><a href="http://www.blogger.com/" title="Blogger">Blogger</a></li>
-          <li><a href="http://www.pixnet.net/" title="痞客邦">痞客邦</a></li>
-          <li><a href="http://xuite.net" title="隨意窩">隨意窩</a></li>
-          <li><a href="http://www.groupon.com.tw" title="Groupon">Groupon</a></li>
-          <li><a href="http://tw.mall.yahoo.com" title="Yahoo!奇摩超級商城">Yahoo!奇摩</br>超級商城</a></li>
-          <li><a href="http://www.ruten.com.tw" title="露天拍賣">露天拍賣</a></li>
-          <li><a href="http://24h.pchome.com.tw/index/" title="Pchome24h購物">Pchome</br>24h購物</a></li>
-          <li><a href="http://www.gohappy.com.tw/" title="快樂購物網">快樂購物網</a></li>
-          <li><a href="http://www.lativ.com.tw" title="lativ">lativ</a></li>
-          <li><a href="http://www.uniqlo.com/tw/" title="uniqlo">uniqlo</a></li>
-          <li><a href="http://www.pazzo.com.tw/Shop/Index.html" title="PAZZO">PAZZO</a></li>
-          <li><a href="http://www.victoriassecret.com" title="維多利亞的秘密">維多利亞</br>的秘密</a></li>
+          <li><a href="http://1111.com.tw" title="1111人力銀行" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0002'); ga('send', 'event', 'SiteName', 'Cat01', '1111人力銀行_http://1111.com.tw');">1111人力銀行</a></li>
+          <li><a href="http://udn.com/NEWS/mainpage.shtml" title="聯合新聞網" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0102'); ga('send', 'event', 'SiteName', 'Cat01', '聯合新聞網_http://udn.com/NEWS/mainpage.shtml');">聯合新聞網</a></li>
+          <li><a href="http://www.emome.net/" title="emome" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0202'); ga('send', 'event', 'SiteName', 'Cat01', 'emome_http://www.emome.net/');">emome</a></li>
+          <li><a href="http://www.plurk.com/" title="噗浪" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0302'); ga('send', 'event', 'SiteName', 'Cat01', '噗浪_http://www.plurk.com/');">噗浪</a></li>
+          <li><a href="http://www.taiwanlottery.com.tw" title="台灣彩券" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0402'); ga('send', 'event', 'SiteName', 'Cat01', '台灣彩券_http://www.taiwanlottery.com.tw');">台灣彩券</a></li>
+          <li><a href="http://www.apple.com/tw/" title="Apple" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0502'); ga('send', 'event', 'SiteName', 'Cat01', 'Apple_http://www.apple.com/tw/');">Apple</a></li>
+          <li><a href="http://www.blogger.com/" title="Blogger" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0003'); ga('send', 'event', 'SiteName', 'Cat01', 'Blogger_http://www.blogger.com/');">Blogger</a></li>
+          <li><a href="http://www.niusnews.com/" title="妞新聞" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0103'); ga('send', 'event', 'SiteName', 'Cat01', '妞新聞_http://www.niusnews.com/');">妞新聞</a></li>
+          <li><a href="http://xuite.net" title="隨意窩" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0203'); ga('send', 'event', 'SiteName', 'Cat01', '隨意窩_http://xuite.net');">隨意窩</a></li>
+          <li><a href="http://www.groupon.com.tw" title="Groupon" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0303'); ga('send', 'event', 'SiteName', 'Cat01', 'Groupon_http://www.groupon.com.tw');">Groupon</a></li>
+          <li><a href="http://tw.mall.yahoo.com" title="Yahoo!奇摩超級商城" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0403'); ga('send', 'event', 'SiteName', 'Cat01', 'Yahoo!奇摩超級商城_http://tw.mall.yahoo.com');">Yahoo!奇摩</br>超級商城</a></li>
+          <li><a href="http://www.ruten.com.tw" title="露天拍賣" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0503'); ga('send', 'event', 'SiteName', 'Cat01', '露天拍賣_http://www.ruten.com.tw');">露天拍賣</a></li>
+          <li><a href="http://24h.pchome.com.tw/index/" title="Pchome24h購物" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0004'); ga('send', 'event', 'SiteName', 'Cat01', 'Pchome24h購物_http://24h.pchome.com.tw/index/');">Pchome</br>24h購物</a></li>
+          <li><a href="http://www.gohappy.com.tw/" title="快樂購物網" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0104'); ga('send', 'event', 'SiteName', 'Cat01', '快樂購物網_http://www.gohappy.com.tw/');">快樂購物網</a></li>
+          <li><a href="http://www.lativ.com.tw" title="lativ" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0204'); ga('send', 'event', 'SiteName', 'Cat01', 'lativ_http://www.lativ.com.tw');">lativ</a></li>
+          <li><a href="http://www.uniqlo.com/tw/" title="uniqlo" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0304'); ga('send', 'event', 'SiteName', 'Cat01', 'uniqlo_http://www.uniqlo.com/tw/');">uniqlo</a></li>
+          <li><a href="http://www.pazzo.com.tw/Shop/" title="PAZZO" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0404'); ga('send', 'event', 'SiteName', 'Cat01', 'PAZZO_http://www.pazzo.com.tw/Shop/');">PAZZO</a></li>
+          <li><a href="http://www.victoriassecret.com" title="維多利亞的秘密" onclick="ga('send', 'event', 'SiteMap', 'Cat01', '0504'); ga('send', 'event', 'SiteName', 'Cat01', '維多利亞的秘密_http://www.victoriassecret.com');">維多利亞</br>的秘密</a></li>
         </ul>
       </div>
     </div>
@@ -252,75 +107,75 @@ a:hover {
       <div class="iconlink">
         <ul id="node8">
           <li>
-          <a href="http://www.books.com.tw" title="博客來"><img src="/assets/images/icon_books.png"></a>
-          <a href="http://www.books.com.tw" title="博客來">博客來</a>
+          <a href="http://www.books.com.tw" title="博客來" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0000'); ga('send', 'event', 'SiteName', 'Cat02', '博客來_http://www.books.com.tw');"><img src="/assets/images/icon_books.png"></a>
+          <a href="http://www.books.com.tw" title="博客來" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0000'); ga('send', 'event', 'SiteName', 'Cat02', '博客來_http://www.books.com.tw');">博客來</a>
           </li>
           <li>
-          <a href="http://www.591.com.tw" title="591"><img src="/assets/images/icon_591.png"></a>
-          <a href="http://www.591.com.tw" title="591">591</a>
+          <a href="http://www.591.com.tw" title="591" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0100'); ga('send', 'event', 'SiteName', 'Cat02', '591_http://www.591.com.tw');"><img src="/assets/images/icon_591.png"></a>
+          <a href="http://www.591.com.tw" title="591" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0100'); ga('send', 'event', 'SiteName', 'Cat02', '591_http://www.591.com.tw');">591</a>
           </li>
           <li>
-          <a href="http://www.backpackers.com.tw/forum/" title="背包客棧"><img src="/assets/images/icon_packbag.png"></a>
-          <a href="http://www.backpackers.com.tw/forum/" title="背包客棧">背包客棧</a>
+          <a href="http://www.backpackers.com.tw/forum/" title="背包客棧" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0200'); ga('send', 'event', 'SiteName', 'Cat02', '背包客棧_http://www.backpackers.com.tw/forum/');"><img src="/assets/images/icon_packbag.png"></a>
+          <a href="http://www.backpackers.com.tw/forum/" title="背包客棧" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0200'); ga('send', 'event', 'SiteName', 'Cat02', '背包客棧_http://www.backpackers.com.tw/forum/');">背包客棧</a>
           </li>
           <li>
-          <a href="http://www.atmovies.com.tw/home/movie_homepage.html" title="開眼電影網"><img src="/assets/images/icon_openeye.png"></a>
-          <a href="http://www.atmovies.com.tw/home/movie_homepage.html" title="開眼電影網">開眼電影網</a>
+          <a href="http://www.atmovies.com.tw/home/movie_homepage.html" title="開眼電影網" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0300'); ga('send', 'event', 'SiteName', 'Cat02', '開眼電影網_http://www.atmovies.com.tw/home/movie_homepage.html');"><img src="/assets/images/icon_openeye.png"></a>
+          <a href="http://www.atmovies.com.tw/home/movie_homepage.html" title="開眼電影網" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0300'); ga('send', 'event', 'SiteName', 'Cat02', '開眼電影網_http://www.atmovies.com.tw/home/movie_homepage.html');">開眼電影網</a>
           </li>
           <li>
-          <a href="http://rate.bot.com.tw/Pages/Static/UIP003.zh-TW.htm" title="臺銀匯率"><img src="/assets/images/icon_taiwanbank.png"></a>
-          <a href="http://rate.bot.com.tw/Pages/Static/UIP003.zh-TW.htm" title="臺銀匯率">臺銀匯率</a>
+          <a href="http://rate.bot.com.tw/Pages/Static/UIP003.zh-TW.htm" title="臺銀匯率" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0400'); ga('send', 'event', 'SiteName', 'Cat02', '臺銀匯率_http://rate.bot.com.tw/Pages/Static/UIP003.zh-TW.htm');"><img src="/assets/images/icon_taiwanbank.png"></a>
+          <a href="http://rate.bot.com.tw/Pages/Static/UIP003.zh-TW.htm" title="臺銀匯率" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0400'); ga('send', 'event', 'SiteName', 'Cat02', '臺銀匯率_http://rate.bot.com.tw/Pages/Static/UIP003.zh-TW.htm');">臺銀匯率</a>
           </li>
           <li>
-          <a href="http://www.cwb.gov.tw/" title="中央氣象局"><img src="/assets/images/icon_weather.png"></a>
-          <a href="http://www.cwb.gov.tw/" title="中央氣象局">中央氣象局</a>
+          <a href="http://www.cwb.gov.tw/" title="中央氣象局" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0500'); ga('send', 'event', 'SiteName', 'Cat02', '中央氣象局_http://www.cwb.gov.tw/');"><img src="/assets/images/icon_weather.png"></a>
+          <a href="http://www.cwb.gov.tw/" title="中央氣象局" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0500'); ga('send', 'event', 'SiteName', 'Cat02', '中央氣象局_http://www.cwb.gov.tw/');">中央氣象局</a>
           </li>
           <li>
-          <a href="http://mlb.mlb.com/index.jsp" title="MLB"><img src="/assets/images/icon_mlb.png"></a>
-          <a href="http://mlb.mlb.com/index.jsp" title="MLB">MLB</a>
+          <a href="http://mlb.mlb.com/index.jsp" title="MLB" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0001'); ga('send', 'event', 'SiteName', 'Cat02', 'MLB_http://mlb.mlb.com/index.jsp');"><img src="/assets/images/icon_mlb.png"></a>
+          <a href="http://mlb.mlb.com/index.jsp" title="MLB" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0001'); ga('send', 'event', 'SiteName', 'Cat02', 'MLB_http://mlb.mlb.com/index.jsp');">MLB</a>
           </li>
           <li>
-          <a href="http://www.nba.com/" title="NBA"><img src="/assets/images/icon_nba.png"></a>
-          <a href="http://www.nba.com/" title="NBA">NBA</a>
+          <a href="http://www.nba.com/" title="NBA" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0101'); ga('send', 'event', 'SiteName', 'Cat02', 'NBA_http://www.nba.com/');"><img src="/assets/images/icon_nba.png"></a>
+          <a href="http://www.nba.com/" title="NBA" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0101'); ga('send', 'event', 'SiteName', 'Cat02', 'NBA_http://www.nba.com/');">NBA</a>
           </li>
           <li>
-          <a href="http://www.formula1.com/" title="F1"><img src="/assets/images/icon_f1.png"></a>
-          <a href="http://www.formula1.com/" title="F1">F1</a>
+          <a href="http://www.formula1.com/" title="F1" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0201'); ga('send', 'event', 'SiteName', 'Cat02', 'F1_http://www.formula1.com/');"><img src="/assets/images/icon_f1.png"></a>
+          <a href="http://www.formula1.com/" title="F1" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0201'); ga('send', 'event', 'SiteName', 'Cat02', 'F1_http://www.formula1.com/');">F1</a>
           </li>
           <li>
-          <a href="http://www.eprice.com.tw/ " title="ePrice比價王"><img src="/assets/images/icon_ezprice.png"></a>
-          <a href="http://www.eprice.com.tw/ " title="ePrice比價王">ePrice比價王</a>
+          <a href="http://www.eprice.com.tw/" title="ePrice比價王" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0301'); ga('send', 'event', 'SiteName', 'Cat02', 'ePrice比價王_http://www.eprice.com.tw/');"><img src="/assets/images/icon_eprice.png"></a>
+          <a href="http://www.eprice.com.tw/" title="ePrice比價王" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0301'); ga('send', 'event', 'SiteName', 'Cat02', 'ePrice比價王_http://www.eprice.com.tw/');">ePrice比價王</a>
           </li>
           <li>
-          <a href="http://www.ipeen.com.tw/" title="愛評網"><img src="/assets/images/icon_ipeen.png"></a>
-          <a href="http://www.ipeen.com.tw/" title="愛評網">愛評網</a>
+          <a href="http://www.ipeen.com.tw/" title="愛評網" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0401'); ga('send', 'event', 'SiteName', 'Cat02', '愛評網_http://www.ipeen.com.tw/');"><img src="/assets/images/icon_ipeen.png"></a>
+          <a href="http://www.ipeen.com.tw/" title="愛評網" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0401'); ga('send', 'event', 'SiteName', 'Cat02', '愛評網_http://www.ipeen.com.tw/');">愛評網</a>
           </li>
           <li>
-          <a href="http://www.babyhome.com.tw/ " title="寶貝家庭"><img src="/assets/images/icon_babyhome.png"></a>
-          <a href="http://www.babyhome.com.tw/ " title="寶貝家庭">寶貝家庭</a>
+          <a href="http://www.babyhome.com.tw/" title="寶貝家庭" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0501'); ga('send', 'event', 'SiteName', 'Cat02', '寶貝家庭_http://www.babyhome.com.tw/');"><img src="/assets/images/icon_babyhome.png"></a>
+          <a href="http://www.babyhome.com.tw/" title="寶貝家庭" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0501'); ga('send', 'event', 'SiteName', 'Cat02', '寶貝家庭_http://www.babyhome.com.tw/');">寶貝家庭</a>
           </li>
         </ul>
       </div>
       <div class="txtlink">
         <ul id="node9">
-          <li><a href="http://translate.google.com.tw" title="Google翻譯">Google翻譯</a></li>
-          <li><a href="http://tw.dictionary.yahoo.com/" title="Yahoo! 字典">Yahoo! 字典</a></li>
-          <li><a href="http://www.post.gov.tw/post/index.jsp" title="中華郵政">中華郵政</a></li>
-          <li><a href="http://invoice.etax.nat.gov.tw/" title="統一發票">統一發票</a></li>
-          <li><a href="http://twtraffic.tra.gov.tw/twrail/" title="台鐵時刻表">台鐵時刻表</a></li>
-          <li><a href="https://irs.thsrc.com.tw/IMINT?locale=tw" title="高鐵訂票">高鐵訂票</a></li>
-          <li><a href="http://www.eztravel.com.tw/" title="易遊網">易遊網</a></li>
-          <li><a href="http://www.ncl.edu.tw/mp.asp?mp=2" title="國家圖書館">國家圖書館</a></li>
-          <li><a href="http://www.ezding.com.tw/" title="EZ訂">EZ訂</a></li>
-          <li><a href="http://www.citytalk.tw/" title="Citytalk 城市通">Citytalk 城市通</a></li>
-          <li><a href="http://incar.tw" title="癮車報">癮車報</a></li>
-          <li><a href="http://www.cnyes.com" title="鉅亨網">鉅亨網</a></li>
-          <li><a href="http://tw.stock.yahoo.com/" title="Yahoo!股市">Yahoo!股市</a></li>
-          <li><a href="http://tw.kkbox.com/index.html" title="KKBOX">KKBOX</a></li>
-          <li><a href="http://verywed.com/" title="非常婚禮">非常婚禮</a></li>
-          <li><a href="http://www.chinatrust.com.tw/" title="中國信託">中國信託</a></li>
-          <li><a href="http://espn.go.com/nfl/" title="ESPN NFL">ESPN NFL</a></li>
-          <li><a href="http://www.fashionguide.com.tw/" title="FashionGuide" style="font-size:11px;">FashionGuide</a></li>
+          <li><a href="http://translate.google.com.tw" title="Google翻譯" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0002'); ga('send', 'event', 'SiteName', 'Cat02', 'Google翻譯_http://translate.google.com.tw');">Google翻譯</a></li>
+          <li><a href="http://tw.dictionary.yahoo.com/" title="Yahoo! 字典" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0102'); ga('send', 'event', 'SiteName', 'Cat02', 'Yahoo! 字典_http://tw.dictionary.yahoo.com/');">Yahoo! 字典</a></li>
+          <li><a href="http://www.post.gov.tw/post/index.jsp" title="中華郵政" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0202'); ga('send', 'event', 'SiteName', 'Cat02', '中華郵政_http://www.post.gov.tw/post/index.jsp');">中華郵政</a></li>
+          <li><a href="http://invoice.etax.nat.gov.tw/" title="統一發票" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0302'); ga('send', 'event', 'SiteName', 'Cat02', '統一發票_http://invoice.etax.nat.gov.tw/');">統一發票</a></li>
+          <li><a href="http://twtraffic.tra.gov.tw/twrail/" title="台鐵時刻表" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0402'); ga('send', 'event', 'SiteName', 'Cat02', '台鐵時刻表_http://twtraffic.tra.gov.tw/twrail/');">台鐵時刻表</a></li>
+          <li><a href="https://irs.thsrc.com.tw/IMINT?locale=tw" title="高鐵訂票" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0502'); ga('send', 'event', 'SiteName', 'Cat02', '高鐵訂票_https://irs.thsrc.com.tw/IMINT?locale=tw');">高鐵訂票</a></li>
+          <li><a href="http://www.eztravel.com.tw/" title="易遊網" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0003'); ga('send', 'event', 'SiteName', 'Cat02', '易遊網_http://www.eztravel.com.tw/');">易遊網</a></li>
+          <li><a href="http://www.ncl.edu.tw/mp.asp?mp=2" title="國家圖書館" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0103'); ga('send', 'event', 'SiteName', 'Cat02', '國家圖書館_http://www.ncl.edu.tw/mp.asp?mp=2');">國家圖書館</a></li>
+          <li><a href="http://www.ezding.com.tw/" title="EZ訂" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0203'); ga('send', 'event', 'SiteName', 'Cat02', 'EZ訂_http://www.ezding.com.tw/');">EZ訂</a></li>
+          <li><a href="http://www.citytalk.tw/" title="Citytalk 城市通" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0303'); ga('send', 'event', 'SiteName', 'Cat02', 'Citytalk 城市通_http://www.citytalk.tw/');">Citytalk 城市通</a></li>
+          <li><a href="http://incar.tw" title="癮車報" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0403'); ga('send', 'event', 'SiteName', 'Cat02', '癮車報_http://incar.tw');">癮車報</a></li>
+          <li><a href="http://www.cnyes.com" title="鉅亨網" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0503'); ga('send', 'event', 'SiteName', 'Cat02', '鉅亨網_http://www.cnyes.com');">鉅亨網</a></li>
+          <li><a href="http://tw.stock.yahoo.com/" title="Yahoo!股市" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0004'); ga('send', 'event', 'SiteName', 'Cat02', 'Yahoo!股市_http://tw.stock.yahoo.com/');">Yahoo!股市</a></li>
+          <li><a href="http://tw.kkbox.com/index.html" title="KKBOX" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0104'); ga('send', 'event', 'SiteName', 'Cat02', 'KKBOX_http://tw.kkbox.com/index.html');">KKBOX</a></li>
+          <li><a href="http://verywed.com/" title="非常婚禮" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0204'); ga('send', 'event', 'SiteName', 'Cat02', '非常婚禮_http://verywed.com/');">非常婚禮</a></li>
+          <li><a href="http://www.chinatrust.com.tw/" title="中國信託" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0304'); ga('send', 'event', 'SiteName', 'Cat02', '中國信託_http://www.chinatrust.com.tw/');">中國信託</a></li>
+          <li><a href="http://espn.go.com/nfl/" title="ESPN NFL" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0404'); ga('send', 'event', 'SiteName', 'Cat02', 'ESPN NFL_http://espn.go.com/nfl/');">ESPN NFL</a></li>
+          <li><a href="http://www.fashionguide.com.tw/" title="FashionGuide" style="font-size:11px;" onclick="ga('send', 'event', 'SiteMap', 'Cat02', '0504'); ga('send', 'event', 'SiteName', 'Cat02', 'FashionGuide_http://www.fashionguide.com.tw/');">FashionGuide</a></li>
         </ul>
       </div>
     </div>
@@ -328,75 +183,75 @@ a:hover {
       <div class="iconlink">
         <ul id="node10">
           <li>
-          <a href="http://wired.tw/" title="WIRED.tw"><img src="/assets/images/icon_wired.png"></a>
-          <a href="http://wired.tw/" title="WIRED.tw">WIRED.tw</a>
+          <a href="http://wired.tw/" title="WIRED.tw" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0000'); ga('send', 'event', 'SiteName', 'Cat03', 'WIRED.tw_http://wired.tw/');"><img src="/assets/images/icon_wired.png"></a>
+          <a href="http://wired.tw/" title="WIRED.tw" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0000'); ga('send', 'event', 'SiteName', 'Cat03', 'WIRED.tw_http://wired.tw/');">WIRED.tw</a>
           </li>
           <li>
-          <a href="http://www.inside.com.tw/" title="INSIDE"><img src="/assets/images/icon_inside.png"></a>
-          <a href="http://www.inside.com.tw/" title="INSIDE">INSIDE</a>
+          <a href="http://www.inside.com.tw/" title="INSIDE" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0100'); ga('send', 'event', 'SiteName', 'Cat03', 'INSIDE_http://www.inside.com.tw/');"><img src="/assets/images/icon_inside.png"></a>
+          <a href="http://www.inside.com.tw/" title="INSIDE" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0100'); ga('send', 'event', 'SiteName', 'Cat03', 'INSIDE_http://www.inside.com.tw/');">INSIDE</a>
           </li>
           <li>
-          <a href="http://chinese.engadget.com/" title="Engadget 中文版"><img src="/assets/images/icon_engadget.png"></a>
-          <a href="http://chinese.engadget.com/" title="Engadget 中文版">Engadget</br>中文版</a>
+          <a href="http://chinese.engadget.com/" title="Engadget 中文版" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0200'); ga('send', 'event', 'SiteName', 'Cat03', 'Engadget 中文版_http://chinese.engadget.com/');"><img src="/assets/images/icon_engadget.png"></a>
+          <a href="http://chinese.engadget.com/" title="Engadget 中文版" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0200'); ga('send', 'event', 'SiteName', 'Cat03', 'Engadget 中文版_http://chinese.engadget.com/');">Engadget</br>中文版</a>
           </li>
           <li>
-          <a href="http://www.techbang.com/" title="T客邦"><img src="/assets/images/icon_techbang.png"></a>
-          <a href="http://www.techbang.com/" title="T客邦">T客邦</a>
+          <a href="http://www.techbang.com/" title="T客邦" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0300'); ga('send', 'event', 'SiteName', 'Cat03', 'T客邦_http://www.techbang.com/');"><img src="/assets/images/icon_techbang.png"></a>
+          <a href="http://www.techbang.com/" title="T客邦" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0300'); ga('send', 'event', 'SiteName', 'Cat03', 'T客邦_http://www.techbang.com/');">T客邦</a>
           </li>
           <li>
-          <a href="http://www.cool3c.com/" title="癮科技"><img src="/assets/images/icon_cool3c.png"></a>
-          <a href="http://www.cool3c.com/" title="癮科技">癮科技</a>
+          <a href="http://www.cool3c.com/" title="癮科技" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0400'); ga('send', 'event', 'SiteName', 'Cat03', '癮科技_http://www.cool3c.com/');"><img src="/assets/images/icon_cool3c.png"></a>
+          <a href="http://www.cool3c.com/" title="癮科技" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0400'); ga('send', 'event', 'SiteName', 'Cat03', '癮科技_http://www.cool3c.com/');">癮科技</a>
           </li>
           <li>
-          <a href="http://techorange.com/" title="TechOrange"><img src="/assets/images/icon_techorange.png"></a>
-          <a href="http://techorange.com/" title="TechOrange">TechOrange</a>
+          <a href="http://techorange.com/" title="TechOrange" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0500'); ga('send', 'event', 'SiteName', 'Cat03', 'TechOrange_http://techorange.com/');"><img src="/assets/images/icon_techorange.png"></a>
+          <a href="http://techorange.com/" title="TechOrange" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0500'); ga('send', 'event', 'SiteName', 'Cat03', 'TechOrange_http://techorange.com/');">TechOrange</a>
           </li>
           <li>
-          <a href="http://www.ted.com" title="TED"><img src="/assets/images/icon_TED.png"></a>
-          <a href="http://www.ted.com" title="TED">TED</a>
+          <a href="http://www.ted.com" title="TED" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0001'); ga('send', 'event', 'SiteName', 'Cat03', 'TED_http://www.ted.com');"><img src="/assets/images/icon_TED.png"></a>
+          <a href="http://www.ted.com" title="TED" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0001'); ga('send', 'event', 'SiteName', 'Cat03', 'TED_http://www.ted.com');">TED</a>
           </li>
           <li>
-          <a href="https://developer.mozilla.org/zh-TW/" title="Mozilla 開發者社群"><img src="/assets/images/icon_mdn.png"></a>
-          <a href="https://developer.mozilla.org/zh-TW/" title="Mozilla 開發者社群">Mozilla</br>開發者社群</a>
+          <a href="https://developer.mozilla.org/zh-TW/" title="Mozilla 開發者社群" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0101'); ga('send', 'event', 'SiteName', 'Cat03', 'Mozilla 開發者社群_https://developer.mozilla.org/zh-TW/');"><img src="/assets/images/icon_mdn.png"></a>
+          <a href="https://developer.mozilla.org/zh-TW/" title="Mozilla 開發者社群" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0101'); ga('send', 'event', 'SiteName', 'Cat03', 'Mozilla 開發者社群_https://developer.mozilla.org/zh-TW/');">Mozilla</br>開發者社群</a>
           </li>
           <li>
-          <a href="http://www.bugzilla.org" title="Bugzilla"><img src="/assets/images/icon_bugzilla.png"></a>
-          <a href="http://www.bugzilla.org" title="Bugzilla">Bugzilla</a>
+          <a href="http://www.bugzilla.org" title="Bugzilla" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0201'); ga('send', 'event', 'SiteName', 'Cat03', 'Bugzilla_http://www.bugzilla.org');"><img src="/assets/images/icon_bugzilla.png"></a>
+          <a href="http://www.bugzilla.org" title="Bugzilla" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0201'); ga('send', 'event', 'SiteName', 'Cat03', 'Bugzilla_http://www.bugzilla.org');">Bugzilla</a>
           </li>
           <li>
-          <a href="http://news.gamme.com.tw/" title="宅宅新聞"><img src="/assets/images/icon_gamme.png"></a>
-          <a href="http://news.gamme.com.tw/" title="宅宅新聞">宅宅新聞</a>
+          <a href="http://news.gamme.com.tw/" title="宅宅新聞" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0301'); ga('send', 'event', 'SiteName', 'Cat03', '宅宅新聞_http://news.gamme.com.tw/');"><img src="/assets/images/icon_gamme.png"></a>
+          <a href="http://news.gamme.com.tw/" title="宅宅新聞" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0301'); ga('send', 'event', 'SiteName', 'Cat03', '宅宅新聞_http://news.gamme.com.tw/');">宅宅新聞</a>
           </li>
           <li>
-          <a href="http://www.digitimes.com.tw" title="DigiTimes電子時報"><img src="/assets/images/icon_digtimes.png"></a>
-          <a href="http://www.digitimes.com.tw" title="DigiTimes電子時報">DigiTimes</br>電子時報</a>
+          <a href="http://www.digitimes.com.tw" title="DigiTimes電子時報" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0401'); ga('send', 'event', 'SiteName', 'Cat03', 'DigiTimes電子時報_http://www.digitimes.com.tw');"><img src="/assets/images/icon_digtimes.png"></a>
+          <a href="http://www.digitimes.com.tw" title="DigiTimes電子時報" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0401'); ga('send', 'event', 'SiteName', 'Cat03', 'DigiTimes電子時報_http://www.digitimes.com.tw');">DigiTimes</br>電子時報</a>
           </li>
           <li>
-          <a href="http://techcrunch.com/" title="TechCrunch"><img src="/assets/images/icon_techchrech.png"></a>
-          <a href="http://techcrunch.com/" title="TechCrunch">TechCrunch</a>
+          <a href="http://techcrunch.com/" title="TechCrunch" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0501'); ga('send', 'event', 'SiteName', 'Cat03', 'TechCrunch_http://techcrunch.com/');"><img src="/assets/images/icon_techchrech.png"></a>
+          <a href="http://techcrunch.com/" title="TechCrunch" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0501'); ga('send', 'event', 'SiteName', 'Cat03', 'TechCrunch_http://techcrunch.com/');">TechCrunch</a>
           </li>
         </ul>
       </div>
       <div class="txtlink">
         <ul id="node11">
-          <li><a href="http://www.sogi.com.tw/ " title="Sogi! 手機王譯">Sogi! 手機王</a></li>
-          <li><a href="http://mrjamie.cc/" title="Mr. Jamie">Mr. Jamie</a></li>
-          <li><a href="http://mmdays.com/" title="MMDays">MMDays</a></li>
-          <li><a href="http://www.mobile01.com" title="Mobile01">Mobile01</a></li>
-          <li><a href="http://www.bnext.com.tw/" title="bnext">bnext</a></li>
-          <li><a href="http://www.xda-developers.com" title="XDA Developers">XDA<br /> Developers</a></li>
-          <li><a href="http://forums.digitalpoint.com/forumdisplay.php?f=5" title="Google Forum">Google Forum</a></li>
-          <li><a href="http://briian.com/" title="重灌狂人">重灌狂人</a></li>
-          <li><a href="http://www.ithome.com.tw" title="iThome">iThome</a></li>
-          <li><a href="http://androidxref.com" title="AndroidXRef">AndroidXRef</a></li>
-          <li><a href="http://bit.ly" title="bit.ly">bit.ly</a></li>
-          <li><a href="http://slashdot.org" title="Slashdot">Slashdot</a></li>
-          <li><a href="http://www.osnews.com" title="OSNews">OSNews</a></li>
-          <li><a href="http://digiphoto.techbang.com/" title="DIGI PHOTO">DIGI PHOTO</a></li>
-          <li><a href="http://www.dcview.com" title="DCView 數位視野">DCView<br />數位視野</a></li>
-          <li><a href="http://snapsort.com " title="snapsort">snapsort</a></li>
-          <li><a href="http://news.ycombinator.com/" title="Hacker News">Hacker News</a></li>
-          <li><a href="http://www.ptt.cc/bbs/index.html" title="PTT web">PTT web</a></li>
+          <li><a href="http://www.sogi.com.tw/ " title="Sogi! 手機王譯" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0002'); ga('send', 'event', 'SiteName', 'Cat03', 'Sogi! 手機王_http://www.sogi.com.tw/');">Sogi! 手機王</a></li>
+          <li><a href="http://mrjamie.cc/" title="Mr. Jamie" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0102'); ga('send', 'event', 'SiteName', 'Cat03', 'Mr. Jamie_http://mrjamie.cc/');">Mr. Jamie</a></li>
+          <li><a href="http://mmdays.com/" title="MMDays" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0202'); ga('send', 'event', 'SiteName', 'Cat03', 'MMDays_http://mmdays.com/');">MMDays</a></li>
+          <li><a href="http://www.mobile01.com" title="Mobile01" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0302'); ga('send', 'event', 'SiteName', 'Cat03', 'Mobile01_http://www.mobile01.com');">Mobile01</a></li>
+          <li><a href="http://www.bnext.com.tw/" title="bnext" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0402'); ga('send', 'event', 'SiteName', 'Cat03', 'bnext_http://www.bnext.com.tw/');">bnext</a></li>
+          <li><a href="http://www.xda-developers.com" title="XDA Developers" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0502'); ga('send', 'event', 'SiteName', 'Cat03', 'XDA Developers_http://www.xda-developers.com');">XDA<br /> Developers</a></li>
+          <li><a href="http://forums.digitalpoint.com/forumdisplay.php?f=5" title="Google Forum" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0003'); ga('send', 'event', 'SiteName', 'Cat03', 'Google Forum_http://forums.digitalpoint.com/forumdisplay.php?f=5');">Google Forum</a></li>
+          <li><a href="http://briian.com/" title="重灌狂人" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0103'); ga('send', 'event', 'SiteName', 'Cat03', '重灌狂人_http://briian.com/');">重灌狂人</a></li>
+          <li><a href="http://www.ithome.com.tw" title="iThome" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0203'); ga('send', 'event', 'SiteName', 'Cat03', 'iThome_http://www.ithome.com.tw');">iThome</a></li>
+          <li><a href="http://androidxref.com" title="AndroidXRef" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0303'); ga('send', 'event', 'SiteName', 'Cat03', 'AndroidXRef_http://androidxref.com');">AndroidXRef</a></li>
+          <li><a href="http://bit.ly" title="bit.ly" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0403'); ga('send', 'event', 'SiteName', 'Cat03', 'bit.ly_http://bit.ly');">bit.ly</a></li>
+          <li><a href="http://slashdot.org" title="Slashdot" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0503'); ga('send', 'event', 'SiteName', 'Cat03', 'Slashdot_http://slashdot.org');">Slashdot</a></li>
+          <li><a href="http://www.osnews.com" title="OSNews" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0004'); ga('send', 'event', 'SiteName', 'Cat03', 'OSNews_http://www.osnews.com');">OSNews</a></li>
+          <li><a href="http://digiphoto.techbang.com/" title="DIGI PHOTO" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0104'); ga('send', 'event', 'SiteName', 'Cat03', 'DIGI PHOTO_http://digiphoto.techbang.com/');">DIGI PHOTO</a></li>
+          <li><a href="http://www.dcview.com" title="DCView 數位視野" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0204'); ga('send', 'event', 'SiteName', 'Cat03', 'DCView 數位視野_http://www.dcview.com');">DCView<br />數位視野</a></li>
+          <li><a href="http://snapsort.com" title="snapsort" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0304'); ga('send', 'event', 'SiteName', 'Cat03', 'snapsort_http://snapsort.com');">snapsort</a></li>
+          <li><a href="http://news.ycombinator.com/" title="Hacker News" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0404'); ga('send', 'event', 'SiteName', 'Cat03', 'Hacker News_http://news.ycombinator.com/');">Hacker News</a></li>
+          <li><a href="http://www.ptt.cc/bbs/index.html" title="PTT web" onclick="ga('send', 'event', 'SiteMap', 'Cat03', '0504'); ga('send', 'event', 'SiteName', 'Cat03', 'PTT web_http://www.ptt.cc/bbs/index.html');">PTT web</a></li>
         </ul>
       </div>
     </div>
@@ -404,87 +259,87 @@ a:hover {
       <div class="iconlink">
         <ul id="node12">
           <li>
-          <a href="http://www.gamer.com.tw/" title="巴哈姆特"><img src="/assets/images/icon_gamer.png"></a>
-          <a href="http://www.gamer.com.tw/" title="巴哈姆特">巴哈姆特</a>
+          <a href="http://www.gamer.com.tw/" title="巴哈姆特" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0000'); ga('send', 'event', 'SiteName', 'Cat04', '巴哈姆特_http://www.gamer.com.tw/');"><img src="/assets/images/icon_gamer.png"></a>
+          <a href="http://www.gamer.com.tw/" title="巴哈姆特" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0000'); ga('send', 'event', 'SiteName', 'Cat04', '巴哈姆特_http://www.gamer.com.tw/');">巴哈姆特</a>
           </li>
           <li>
-          <a href="http://www.gamebase.com.tw/" title="遊戲基地"><img src="/assets/images/icon_gamebase.png"></a>
-          <a href="http://www.gamebase.com.tw/" title="遊戲基地">遊戲基地</a>
+          <a href="http://www.gamebase.com.tw/" title="遊戲基地" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0100'); ga('send', 'event', 'SiteName', 'Cat04', '遊戲基地_http://www.gamebase.com.tw/');"><img src="/assets/images/icon_gamebase.png"></a>
+          <a href="http://www.gamebase.com.tw/" title="遊戲基地" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0100'); ga('send', 'event', 'SiteName', 'Cat04', '遊戲基地_http://www.gamebase.com.tw/');">遊戲基地</a>
           </li>
           <li>
-          <a href="http://www03.eyny.com/" title="伊莉討論區"><img src="/assets/images/icon_eyny.png"></a>
-          <a href="http://www03.eyny.com/" title="伊莉討論區">伊莉討論區</a>
+          <a href="http://www03.eyny.com/" title="伊莉討論區" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0200'); ga('send', 'event', 'SiteName', 'Cat04', '伊莉討論區_http://www03.eyny.com/');"><img src="/assets/images/icon_eyny.png"></a>
+          <a href="http://www03.eyny.com/" title="伊莉討論區" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0200'); ga('send', 'event', 'SiteName', 'Cat04', '伊莉討論區_http://www03.eyny.com/');">伊莉討論區</a>
           </li>
           <li>
-          <a href="http://xboxlife.tw/index2.php" title="Xbox"><img src="/assets/images/icon_xlife.png"></a>
-          <a href="http://xboxlife.tw/index2.php" title="Xbox">Xbox</a>
+          <a href="http://xboxlife.tw/index2.php" title="Xbox" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0300'); ga('send', 'event', 'SiteName', 'Cat04', 'Xbox_http://xboxlife.tw/index2.php');"><img src="/assets/images/icon_xlife.png"></a>
+          <a href="http://xboxlife.tw/index2.php" title="Xbox" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0300'); ga('send', 'event', 'SiteName', 'Cat04', 'Xbox_http://xboxlife.tw/index2.php');">Xbox</a>
           </li>
           <li>
-          <a href="http://asia.playstation.com/tw/cht/psn" title="PS"><img src="/assets/images/icon_ps.png"></a>
-          <a href="http://asia.playstation.com/tw/cht/psn" title="PS">PS</a>
+          <a href="http://asia.playstation.com/tw/cht/psn" title="PS" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0400'); ga('send', 'event', 'SiteName', 'Cat04', 'PS_http://asia.playstation.com/tw/cht/psn');"><img src="/assets/images/icon_ps.png"></a>
+          <a href="http://asia.playstation.com/tw/cht/psn" title="PS" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0400'); ga('send', 'event', 'SiteName', 'Cat04', 'PS_http://asia.playstation.com/tw/cht/psn');">PS</a>
           </li>
           <li>
-          <a href="http://www.nintendo.tw/index.htm" title="Nintendo"><img src="/assets/images/icon_nintedo.png"></a>
-          <a href="http://www.nintendo.tw/index.htm" title="Nintendo">Nintendo</a>
+          <a href="http://www.nintendo.tw/index.htm" title="Nintendo" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0500'); ga('send', 'event', 'SiteName', 'Cat04', 'Nintendo_http://www.nintendo.tw/index.htm');"><img src="/assets/images/icon_nintedo.png"></a>
+          <a href="http://www.nintendo.tw/index.htm" title="Nintendo" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0500'); ga('send', 'event', 'SiteName', 'Cat04', 'Nintendo_http://www.nintendo.tw/index.htm');">Nintendo</a>
           </li>
           <li>
-          <a href="http://tw.blizzard.com/zh-tw/" title="Blizzard"><img src="/assets/images/icon_blizzard.png"></a>
-          <a href="http://tw.blizzard.com/zh-tw/" title="Blizzard">Blizzard</a>
+          <a href="http://tw.blizzard.com/zh-tw/" title="Blizzard" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0001'); ga('send', 'event', 'SiteName', 'Cat04', 'Blizzard_http://tw.blizzard.com/zh-tw/');"><img src="/assets/images/icon_blizzard.png"></a>
+          <a href="http://tw.blizzard.com/zh-tw/" title="Blizzard" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0001'); ga('send', 'event', 'SiteName', 'Cat04', 'Blizzard_http://tw.blizzard.com/zh-tw/');">Blizzard</a>
           </li>
           <li>
-          <a href="http://www.jp.square-enix.com/" title="史克威爾"><img src="/assets/images/icon_square.png"></a>
-          <a href="http://www.jp.square-enix.com/" title="史克威爾">史克威爾</a>
+          <a href="http://www.jp.square-enix.com/" title="史克威爾" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0101'); ga('send', 'event', 'SiteName', 'Cat04', '史克威爾_http://www.jp.square-enix.com/');"><img src="/assets/images/icon_square.png"></a>
+          <a href="http://www.jp.square-enix.com/" title="史克威爾" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0101'); ga('send', 'event', 'SiteName', 'Cat04', '史克威爾_http://www.jp.square-enix.com/');">史克威爾</a>
           </li>
           <li>
-          <a href="http://www.capcomasia.com.hk/" title="CAPCOM"><img src="/assets/images/icon_capcom.png"></a>
-          <a href="http://www.capcomasia.com.hk/" title="CAPCOM">CAPCOM</a>
+          <a href="http://www.capcomasia.com.hk/" title="CAPCOM" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0201'); ga('send', 'event', 'SiteName', 'Cat04', 'CAPCOM_http://www.capcomasia.com.hk/');"><img src="/assets/images/icon_capcom.png"></a>
+          <a href="http://www.capcomasia.com.hk/" title="CAPCOM" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0201'); ga('send', 'event', 'SiteName', 'Cat04', 'CAPCOM_http://www.capcomasia.com.hk/');">CAPCOM</a>
           </li>
           <li>
-          <a href="http://www.rovio.com/" title="Rovio"><img src="/assets/images/icon_rovio.png"></a>
-          <a href="http://www.rovio.com/" title="Rovio">Rovio</a>
+          <a href="http://www.rovio.com/" title="Rovio" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0301'); ga('send', 'event', 'SiteName', 'Cat04', 'Rovio_http://www.rovio.com/');"><img src="/assets/images/icon_rovio.png"></a>
+          <a href="http://www.rovio.com/" title="Rovio" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0301'); ga('send', 'event', 'SiteName', 'Cat04', 'Rovio_http://www.rovio.com/');">Rovio</a>
           </li>
           <li>
-          <a href="http://zynga.com/" title="Zynga"><img src="/assets/images/icon_zynga.png"></a>
-          <a href="http://zynga.com/" title="Zynga">Zynga</a>
+          <a href="http://zynga.com/" title="Zynga" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0401'); ga('send', 'event', 'SiteName', 'Cat04', 'Zynga_http://zynga.com/');"><img src="/assets/images/icon_zynga.png"></a>
+          <a href="http://zynga.com/" title="Zynga" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0401'); ga('send', 'event', 'SiteName', 'Cat04', 'Zynga_http://zynga.com/');">Zynga</a>
           </li>
           <li>
-          <a href="http://www.esports.com.tw/" title="電競聯盟"><img src="/assets/images/icon_tesl.png"></a>
-          <a href="http://www.esports.com.tw/" title="電競聯盟">電競聯盟</a>
+          <a href="http://www.esports.com.tw/" title="電競聯盟" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0501'); ga('send', 'event', 'SiteName', 'Cat04', '電競聯盟_http://www.esports.com.tw/');"><img src="/assets/images/icon_tesl.png"></a>
+          <a href="http://www.esports.com.tw/" title="電競聯盟" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0501'); ga('send', 'event', 'SiteName', 'Cat04', '電競聯盟_http://www.esports.com.tw/');">電競聯盟</a>
           </li>
         </ul>
       </div>
       <div class="txtlink">
         <ul id="node13">
-          <li><a href="http://lol.garena.tw/index/index.php" title="英雄聯盟">英雄聯盟</a></li>
-          <li><a href="http://tw.battle.net/sc2/zh/" title="星海爭霸2">星海爭霸2</a></li>
-          <li><a href="http://tw.battle.net/wow/zh/" title="魔獸世界">魔獸世界</a></li>
-          <li><a href="http://tw.battle.net/d3/zh/" title="暗黑破壞神3">暗黑破壞神3</a></li>
-          <li><a href="http://www.callofduty.com/" title="C.O.D.">C.O.D.</a></li>
-          <li><a href="http://mhf.hehagame.com/" title="魔物獵人">魔物獵人</a></li>
-          <li><a href="http://www.konami.com/" title="KONAMI">KONAMI</a></li>
-          <li><a href="http://tw.beanfun.com" title="beanfun! 樂豆">beanfun! 樂豆</a></li>
-          <li><a href="http://www.8comic.com" title="8comics">8comics</a></li>
-          <li><a href="http://www.8591.com.tw/" title="8591寶物交易網">8591寶物交易網</a></li>
-          <li><a href="http://www.godgame.com.tw/" title="神來也遊戲網">神來也遊戲網</a></li>
-          <li><a href="http://www.kunlun.tw/" title="崑崙在線">崑崙在線</a></li>
-          <li><a href="http://www5.gametower.com.tw/index.aspx" title="Game淘">Game淘</a></li>
-          <li><a href="http://www.roomi.com.tw/web/index.php" title="嚕米玩樂城市">嚕米玩樂城市</a></li>
-          <li><a href="http://www.gameflier.com/" title="GF遊戲平台">GF遊戲平台</a></li>
-          <li><a href="http://www.gj1904.com/" title="遊戲鍋">遊戲鍋</a></li>
-          <li><a href="http://my-gamer.com/" title="小遊戲天堂">小遊戲天堂</a></li>
-          <li><a href="http://www02.wahas.com/index.php" title="維克斯討論區">維克斯討論區</a></li>
+          <li><a href="http://lol.garena.tw/index/index.php" title="英雄聯盟" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0002'); ga('send', 'event', 'SiteName', 'Cat04', '英雄聯盟_http://lol.garena.tw/index/index.php');">英雄聯盟</a></li>
+          <li><a href="http://tw.battle.net/sc2/zh/" title="星海爭霸2" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0102'); ga('send', 'event', 'SiteName', 'Cat04', '星海爭霸2_http://tw.battle.net/sc2/zh/');">星海爭霸2</a></li>
+          <li><a href="http://tw.battle.net/wow/zh/" title="魔獸世界" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0202'); ga('send', 'event', 'SiteName', 'Cat04', '魔獸世界_http://tw.battle.net/wow/zh/');">魔獸世界</a></li>
+          <li><a href="http://tw.battle.net/d3/zh/" title="暗黑破壞神3" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0302'); ga('send', 'event', 'SiteName', 'Cat04', '暗黑破壞神3_http://tw.battle.net/d3/zh/');">暗黑破壞神3</a></li>
+          <li><a href="http://www.callofduty.com/" title="C.O.D." onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0402'); ga('send', 'event', 'SiteName', 'Cat04', 'C.O.D._http://www.callofduty.com/');">C.O.D.</a></li>
+          <li><a href="http://tw.beanfun.com/kartrider/download01.aspx" title="跑跑卡丁車" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0502'); ga('send', 'event', 'SiteName', 'Cat04', '跑跑卡丁車_http://tw.beanfun.com/kartrider/download01.aspx');">跑跑卡丁車</a></li>
+          <li><a href="http://www.konami.com/" title="KONAMI" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0003'); ga('send', 'event', 'SiteName', 'Cat04', 'KONAMI_http://www.konami.com/');">KONAMI</a></li>
+          <li><a href="http://tw.new.beanfun.com/" title="beanfun! 樂豆" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0103'); ga('send', 'event', 'SiteName', 'Cat04', 'beanfun! 樂豆_http://tw.new.beanfun.com/');">beanfun! 樂豆</a></li>
+          <li><a href="http://www.8comic.com" title="8comics" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0203'); ga('send', 'event', 'SiteName', 'Cat04', '8comics_http://www.8comic.com');">8comics</a></li>
+          <li><a href="http://www.8591.com.tw/" title="8591寶物交易網" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0303'); ga('send', 'event', 'SiteName', 'Cat04', '8591寶物交易網_http://www.8591.com.tw/');">8591寶物交易網</a></li>
+          <li><a href="http://www.godgame.com.tw/" title="神來也遊戲網" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0403'); ga('send', 'event', 'SiteName', 'Cat04', '神來也遊戲網_http://www.godgame.com.tw/');">神來也遊戲網</a></li>
+          <li><a href="http://www.kunlun.tw/" title="崑崙在線" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0503'); ga('send', 'event', 'SiteName', 'Cat04', '崑崙在線_http://www.kunlun.tw/');">崑崙在線</a></li>
+          <li><a href="http://www5.gametower.com.tw/index.aspx" title="Game淘" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0004'); ga('send', 'event', 'SiteName', 'Cat04', 'Game淘_http://www5.gametower.com.tw/index.aspx');">Game淘</a></li>
+          <li><a href="http://www.roomi.com.tw/web/index.php" title="嚕米玩樂城市" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0104'); ga('send', 'event', 'SiteName', 'Cat04', '嚕米玩樂城市_http://www.roomi.com.tw/web/index.php');">嚕米玩樂城市</a></li>
+          <li><a href="http://www.gameflier.com/" title="GF遊戲平台" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0204'); ga('send', 'event', 'SiteName', 'Cat04', 'GF遊戲平台_http://www.gameflier.com/');">GF遊戲平台</a></li>
+          <li><a href="http://www.gj1904.com/" title="遊戲鍋" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0304'); ga('send', 'event', 'SiteName', 'Cat04', '遊戲鍋_http://www.gj1904.com/');">遊戲鍋</a></li>
+          <li><a href="http://my-gamer.com/" title="小遊戲天堂" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0404'); ga('send', 'event', 'SiteName', 'Cat04', '小遊戲天堂_http://my-gamer.com/');">小遊戲天堂</a></li>
+          <li><a href="http://www02.wahas.com/index.php" title="維克斯討論區" onclick="ga('send', 'event', 'SiteMap', 'Cat04', '0504'); ga('send', 'event', 'SiteName', 'Cat04', '維克斯討論區_http://www02.wahas.com/index.php');">維克斯討論區</a></li>
         </ul>
       </div>
     </div>
   </div>
 </div>
-<script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script> 
+<script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript">
-function GetQueryString(name) 
-{ 
-var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)"); 
-var r = window.location.search.substr(1).match(reg); 
-if(r!=null)return decodeURIComponent(r[2]); return null; 
+function GetQueryString(name)
+{
+var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+var r = window.location.search.substr(1).match(reg);
+if(r!=null)return decodeURIComponent(r[2]); return null;
 }
 
 var openInNewTab=GetQueryString("openInNewTab");
@@ -534,11 +389,11 @@ var key=$(this).parents("[track-key]").attr("track-key");
 if(typeof key!="undefined")
 {
 var image=new Image();
-image.src= 'http://i.firefoxchina.cn/newtab/images/track.gif' + '?r=' + Math.random() 
+image.src= 'http://i.firefoxchina.cn/newtab/images/track.gif' + '?r=' + Math.random()
 			+ '&d=' + encodeURIComponent(document.location.host)
 			+ '&c=' + encodeURIComponent(key)
 			+ '&a=' + encodeURIComponent("")
-			+ '&u=' + encodeURIComponent(href) 
+			+ '&u=' + encodeURIComponent(href)
 			+ '&cid=' + encodeURIComponent(cid)
 			+ '&t=' + encodeURIComponent(title);
 }
