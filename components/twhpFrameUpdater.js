@@ -10,8 +10,8 @@ Cu.import('resource://ntab/FrameStorage.jsm');
 function TWhpFrameUpdater() {}
 TWhpFrameUpdater.prototype = {
   classDescription: 'TWHP NTab Frame Updater',
-  classID: '@mozillaonline.com/twhp-frame-updater;1',
-  contractID: Components.ID('{375a716d-8d89-47c8-a242-03d0d74979fa}'),
+  classID: Components.ID('{375a716d-8d89-47c8-a242-03d0d74979fa}'),
+  contractID: '@mozillaonline.com/twhp-frame-updater;1',
   QueryInterface: XPCOMUtils.generateQI([Ci.nsISupports,
                                          Ci.nsITimerCallback]),
 
