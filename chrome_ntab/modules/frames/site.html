@@ -28,7 +28,7 @@
       </ul>
     </div>
     <div class="right">
-      <div class="area" id="a" style="display:block;" track-key="mini_mingzhan">
+      <div class="area" id="a" style="display:block;">
         <div class="iconlink">
           <ul id="node6">
             <li>
@@ -103,7 +103,7 @@
           </ul>
         </div>
       </div>
-      <div class="area" id="b" track-key="mini_zixun">
+      <div class="area" id="b">
         <div class="iconlink">
           <ul id="node8">
             <li>
@@ -179,7 +179,7 @@
           </ul>
         </div>
       </div>
-      <div class="area" id="c" track-key="mini_gouwu">
+      <div class="area" id="c">
         <div class="iconlink">
           <ul id="node10">
             <li>
@@ -255,7 +255,7 @@
           </ul>
         </div>
       </div>
-      <div class="area" id="d" track-key="mini_yule">
+      <div class="area" id="d">
         <div class="iconlink">
           <ul id="node12">
             <li>
@@ -359,45 +359,6 @@
       $(this).parent().css("background-position","-160px 0px");
     else if($(this).index()==3)
       $(this).parent().css("background-position","-240px 0px");
-  });
-
-  function getChannelid() {
-    var is_gecko = ((window.Components + '') == '[object nsXPCComponents]');
-    if (is_gecko) {
-      if (window.cehomepage) {
-        var startup = window.cehomepage.startup;
-        if ( !startup.channelid ) {
-          return "unknown";
-        } else {
-          return startup.channelid();
-        }
-      }
-    }
-    return "unknown";
-  }
-
-  var cid="unknown";
-  $(window).load(function(){
-   cid=getChannelid();
- });
-  $("a").click(function(){
-    var title=$(this).attr("title") || $(this).text();
-    var href=$(this).attr("href");
-    if(typeof title!="undefined" && typeof href!="undefined")
-    {
-      var key=$(this).parents("[track-key]").attr("track-key");
-      if(typeof key!="undefined")
-      {
-        var image=new Image();
-        image.src= 'http://adu.myfirefox.com.tw/addons/track.gif' + '?r=' + Math.random()
-        + '&d=' + encodeURIComponent(document.location.host)
-        + '&c=' + encodeURIComponent(key)
-        + '&a=' + encodeURIComponent("")
-        + '&u=' + encodeURIComponent(href)
-        + '&cid=' + encodeURIComponent(cid)
-        + '&t=' + encodeURIComponent(title);
-      }
-    }
   });
   </script>
 </body>

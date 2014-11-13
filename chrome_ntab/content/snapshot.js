@@ -22,12 +22,12 @@
   } catch (e) {
     snapshotMap = {
       'http://mozilla.com.tw/': 'chrome://ntab/skin/thumb/master/firefox.jpg',
-      'https://addons.mozilla.org/zh-TW/': 'chrome://ntab/skin/thumb/master/amo.jpg',
+      'https://www.facebook.com/MozillaTaiwan': 'chrome://ntab/skin/thumb/master/moztwfb.png',
+      'http://blog.mozilla.com.tw/': 'chrome://ntab/skin/thumb/master/blog.png',
+      'https://addons.mozilla.org/zh-TW/firefox/': 'chrome://ntab/skin/thumb/master/amo.jpg',
+      'https://mail.google.com/?hl=zh-TW': 'chrome://ntab/skin/thumb/master/gmail.jpg',
       'https://www.facebook.com/': 'chrome://ntab/skin/thumb/master/fb.jpg',
-      'http://myfirefox.com.tw/': 'chrome://ntab/skin/thumb/master/myfirefox.jpg',
-      'https://plus.google.com/': 'chrome://ntab/skin/thumb/master/gplus.jpg',
-      'https://mail.google.com/': 'chrome://ntab/skin/thumb/master/gmail.jpg',
-      'https://drive.google.com/': 'chrome://ntab/skin/thumb/master/gdrive.jpg',
+      'https://support.mozilla.org/zh-TW/home': 'chrome://ntab/skin/thumb/master/sumo.jpg'
     };
   }
 

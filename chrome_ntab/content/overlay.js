@@ -34,6 +34,25 @@
     }
   }
 
+  function showLastNotification() {
+    let shown = false;
+    try {
+      shown = Services.prefs.getBoolPref('moa.ntab.lastNotificationShown');
+    } catch (e) {}
+    if (shown) return;
+
+    let nb = document.getElementById('global-notificationbox');
+    let notification = nb.appendNotification(
+      'Mozilla Taiwan \u5c07\u5f9e Firefox 34 \u958b\u59cb\u505c\u6b62\u958b\u767c\u53f0\u7063\u7248\uff0c \u76f8\u95dc\u64f4\u5145\u5957\u4ef6\u50c5\u652f\u63f4\u5230 Firefox 34\u3002\u5176\u9918\u64f4\u5145\u5957\u4ef6\u5247\u6703\u7e7c\u7e8c\u7dad\u8b77\u4e0d\u53d7\u5f71\u97ff\u3002',
+      'twhp-last-notification',
+      null,
+      nb.PRIORITY_INFO_HIGH,
+      null
+    );
+
+    Services.prefs.setBoolPref('moa.ntab.lastNotificationShown', true);
+  }
+
   var newTabPref = {
     _appPreloadKey: 'browser.newtab.preload',
     _appUrlKey: 'browser.newtab.url',
@@ -120,6 +139,8 @@
     }
 
     newTabPref.init();
+
+    showLastNotification();
   };
 
   ns.onMenuItemCommand = function(event) {

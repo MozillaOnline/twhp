@@ -20,7 +20,7 @@ AboutTWhome.prototype = {
   },
 
   newChannel: function(aURI) {
-    var home = 'http://myfirefox.com.tw/?utm_source=twhome&utm_medium=browser&utm_campaign=adu';
+    var home = 'http://mozilla.com.tw';
     var channel = Services.io.newChannel(home, null, null);
     channel.loadFlags = channel.loadFlags | channel.LOAD_REPLACE;
     channel.originalURI = aURI;

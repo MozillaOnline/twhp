@@ -25,9 +25,3 @@ contract @mozilla.org/network/protocol/about;1?what=twhome {5ae6894d-7f12-414a-b
 
 component {fdc3c9cd-c6eb-40c5-bb31-98c9f97e9da3} components/twhpThumbsProtocol.js
 contract @mozilla.org/network/protocol;1?name=twhp-page-thumb {fdc3c9cd-c6eb-40c5-bb31-98c9f97e9da3}
-
-
-component {375a716d-8d89-47c8-a242-03d0d74979fa} components/twhpFrameUpdater.js
-contract @mozillaonline.com/twhp-frame-updater;1 {375a716d-8d89-47c8-a242-03d0d74979fa}
-category update-timer TWhpFrameUpdater @mozillaonline.com/twhp-frame-updater;1,getService,twhp-frame-update-timer,moa.ntab.update.interval,43200
-

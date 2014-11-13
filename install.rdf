@@ -9,7 +9,8 @@
 
   <r:Description about="urn:mozilla:install-manifest">
     <id>twhomepage@mozillaonline.com</id>
-    <version>0.2.11</version>
+    <version>0.2.12</version>
+    <strictCompatibility>true</strictCompatibility>
     <name>Firefox Homepage</name>
     <description>Customizied Home Page for Firefox</description>
     <creator>Mozilla Online</creator>
@@ -17,7 +18,7 @@
       <r:Description>
         <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id>
         <minVersion>18.0</minVersion>
-        <maxVersion>28.*</maxVersion>
+        <maxVersion>34.*</maxVersion>
       </r:Description>
     </targetApplication>
 

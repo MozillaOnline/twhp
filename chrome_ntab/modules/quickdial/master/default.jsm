@@ -7,18 +7,18 @@ var EXPORTED_SYMBOLS = ['defaultQuickDial'];
 defaultQuickDial = {
   dialData: {
     '1': {
-      title: 'My Firefox',
-      url: 'http://myfirefox.com.tw/?utm_source=myfirefox&utm_medium=browser&utm_campaign=adu'
-    },
-
-    '2': {
       title: 'Mozilla Taiwan \u5b98\u65b9\u7db2\u7ad9',
       url: 'http://mozilla.com.tw/'
     },
 
+    '2': {
+      title: 'Mozilla Taiwan \u81c9\u66f8\u7c89\u7d72\u5718',
+      url: 'https://www.facebook.com/MozillaTaiwan'
+    },
+
     '3': {
-      title: 'Firefox Online \u706B\u72D0\u5546\u57CE',
-      url: 'http://tw.mall.yahoo.com/store/firefox'
+      title: 'Mozilla Taiwan \u90e8\u843d\u683c',
+      url: 'http://blog.mozilla.com.tw/'
     },
 
     '4': {
@@ -44,11 +44,11 @@ defaultQuickDial = {
 
   snapshotMap: {
     'http://mozilla.com.tw/': 'chrome://ntab/skin/thumb/master/firefox.jpg',
+    'https://www.facebook.com/MozillaTaiwan': 'chrome://ntab/skin/thumb/master/moztwfb.png',
+    'http://blog.mozilla.com.tw/': 'chrome://ntab/skin/thumb/master/blog.png',
     'https://addons.mozilla.org/zh-TW/firefox/': 'chrome://ntab/skin/thumb/master/amo.jpg',
-    'https://www.facebook.com/': 'chrome://ntab/skin/thumb/master/fb.jpg',
-    'http://myfirefox.com.tw/?utm_source=myfirefox&utm_medium=browser&utm_campaign=adu': 'chrome://ntab/skin/thumb/master/myfirefox.jpg',
     'https://mail.google.com/?hl=zh-TW': 'chrome://ntab/skin/thumb/master/gmail.jpg',
-    'http://tw.mall.yahoo.com/store/firefox': 'chrome://ntab/skin/thumb/master/mocotw-store.jpg',
+    'https://www.facebook.com/': 'chrome://ntab/skin/thumb/master/fb.jpg',
     'https://support.mozilla.org/zh-TW/home': 'chrome://ntab/skin/thumb/master/sumo.jpg'
   }
 };

@@ -314,7 +314,6 @@ let Grid = {
     aLi.querySelector('a').addEventListener('click', function(evt) {
       if (evt.currentTarget.href) {
         let fid = aLi.getAttribute('data-fid');
-        tracker.track({ type: 'quickdial', action: 'click', fid: fid, sid: index });
       } else {
         self._editGridItem(index);
       }
@@ -687,7 +686,6 @@ let QDTabs = {
   set currentTab(aTab) {
     NTabUtils.prefs.setCharPref('moa.ntab.qdtab', aTab);
     NTabUtils.prefs.setBoolPref('moa.ntab.qdtab.used', true);
-    tracker.track({ type: 'qdtab', action: 'switch', sid: aTab });
   },
   get quickDial() {
     delete this.quickDial;
@@ -752,9 +750,6 @@ let QDTabs = {
       if (iframes[1].getAttribute('src') != src_) {
         NTabUtils.loadIFrame(iframes[1], src_);
       }
-    }
-    if (aInit) {
-      tracker.track({ type: 'qdtab', action: 'load', sid: tab });
     }
   },
 };
@@ -833,7 +828,7 @@ let Overlay = {
             evt.preventDefault();
             let title = evt.target.textContent;
             let url = evt.target.href;
-            self._choose(title, url, false);
+            self._choose(title, url);
           }, false);
         });
       }, 9);
@@ -856,17 +851,14 @@ let Overlay = {
           evt.preventDefault();
           let title = evt.target.textContent.replace(/\s/g, '');
           let url = evt.target.href;
-          self._choose(title, url, true);
+          self._choose(title, url);
         }, false);
       });
     } catch(e) {}
     this._inited = true;
   },
-  _choose: function Overlay__choose(aTitle, aUrl, aTrack) {
+  _choose: function Overlay__choose(aTitle, aUrl) {
     this.inputTitle.value = aTitle;
-    if (aTrack) {
-      this.inputTitle.setAttribute('data-track', 'track');
-    }
     this.inputUrl.value = aUrl;
   },
   _finish: function Overlay__finish(aTitle, aUrl) {
@@ -874,13 +866,9 @@ let Overlay = {
       let index = this.overlay.getAttribute('data-index');
       quickDialModule.updateDial(index, { url: aUrl, title: aTitle }, false);
     }
-    if (this.inputTitle.hasAttribute('data-track')) {
-      tracker.track({ type: 'links', action: 'click', sid: aTitle });
-    }
     this.overlay.style.display = '';
     this.inputTitle.value = '';
     this.inputUrl.value = '';
-    this.inputTitle.removeAttribute('data-track');
   },
 };
 
@@ -944,7 +932,6 @@ let Launcher = {
             NTabUtils.chromeWindow.openPreferences();
             break;
         }
-        tracker.track({ type: 'tools', action: 'click', sid: evt.currentTarget.id });
       }, false);
     });
   },
@@ -1005,7 +992,6 @@ let Launcher = {
           if (self.launcher.classList.length) {
             self.launcher.className = menu;
           }
-          tracker.track({ type: 'menu', action: 'click', sid: menu });
         }
         evt.stopPropagation();
       }, false);
@@ -1208,7 +1194,6 @@ let NTab = {
   },
   set currentPane(aPane) {
     NTabUtils.prefs.setCharPref('moa.ntab.view', aPane);
-    tracker.track({ type: 'view', action: 'switch', sid: aPane });
   },
   get hideSearch() {
     // pref migration, may be removed after two or three release cycle
@@ -1293,9 +1278,6 @@ let NTab = {
       if (iframe.getAttribute('src') != src_) {
         NTabUtils.loadIFrame(iframe, src_);
       }
-    }
-    if (aInit) {
-      tracker.track({ type: 'view', action: 'load', sid: pane });
     }
 
     let anchor = document.querySelector('footer > a');
